@@ -1,0 +1,42 @@
+{
+  "name": "pinterest-discord-bot",
+  "version": "1.0.0",
+  "description": "Bot that automatically pulls PFPs, banners, and GIFs from Pinterest API and uploads them to Discord channels",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc --watch",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "pinterest",
+    "api",
+    "automation",
+    "media-fetcher"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "@prisma/client": "^5.8.1",
+    "p-queue": "^8.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "prisma": "^5.8.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
